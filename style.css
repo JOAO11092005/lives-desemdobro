@@ -113,3 +113,27 @@ main .previsao p a:hover{
    padding: 20px;
    transition: 0.5s;
 }
+
+@media (max-width: 1200px){
+    body{
+        background: none;
+        background-color: black;
+        background-size: cover;
+     }
+    main .previsao{
+        display: block;
+        background-color: black;
+        width: 100%;
+        margin-left: 0px;
+     }
+     main .previsao p {
+        margin-top: 40px;
+       
+    }
+    main .previsao video {
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 100%;
+    }
+    
+}
