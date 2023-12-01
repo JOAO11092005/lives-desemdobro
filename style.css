@@ -12,8 +12,7 @@ ul , li{
     list-style: none;
 }
 body{
-   background: url(./src/img/coding-1853305_1280.jpg) center center no-repeat;
-   background-size: cover;
+   background-color: #000;
 }
 .logo{
     text-align: center;
@@ -73,23 +72,31 @@ main hr{
     margin-left: 50%;
     transform: translateX(-50%);
 }
+main .video-descricao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .video-descricao .previsao{
+    margin-left: 30px;
+}
 main .previsao{
    display: flex;
- margin-left: 100px;
- gap: 10px;
- background-color: rgba(0, 0, 0, 0.39);
- padding: 20px;
- border-radius: 10px;
+ flex-direction: column;
 }
 main .previsao h2{
     margin-top: 30px;
     font-size: 30px;
 }
-main .previsao video{
+main .video-descricao .video iframe{
     /* margin-left: 50%;
     transform: translateX(-50%); */
     margin-top: 10px;
     border-radius: 10px;
+    border: 2px solid rgb(48, 46, 46);
+    
 }
 main .previsao p{
    gap: 20px;
@@ -101,17 +108,27 @@ main .previsao p{
 main .tempo{
     margin-top: 30px;
 }
-main .previsao p a{
+main .previsao .links ul li  a{
     background-color: blue;
     margin-left: 20px;
     padding: 10px;
     border-radius: 10px;
     transition: 0.5s;
 }
-main .previsao p a:hover{
+main .previsao .links a:hover{
     background-color: rgb(70, 49, 90);
-   padding: 20px;
+    padding: 5px;
    transition: 0.5s;
+}
+main .previsao .links ul li{
+    display: flex;
+    margin-bottom: 10px;
+}
+main .previsao .links ul{
+       margin-top: 30px;
+}
+main .previsao .links{
+    padding: 10px;
 }
 
 @media (max-width: 1200px){
@@ -120,17 +137,22 @@ main .previsao p a:hover{
         background-color: black;
         background-size: cover;
      }
-    main .previsao{
+    main .video-descricao{
         display: block;
         background-color: black;
         width: 100%;
         margin-left: 0px;
      }
-     main .previsao p {
+     main .video-descricao p {
         margin-top: 40px;
+        width: 100%;
        
     }
-    main .previsao video {
+    main .video-descricao .links{
+        align-items: center;
+        justify-content: center;
+    }
+    main .video-descricao  .video iframe{
         margin-top: 10px;
         border-radius: 10px;
         width: 100%;
